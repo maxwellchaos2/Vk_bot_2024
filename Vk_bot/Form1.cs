@@ -80,5 +80,11 @@ namespace Vk_bot
             }
         }
 
+        private void buttonTest_Click(object sender, EventArgs e)
+        {
+            FormTest form = new FormTest();
+            form.access_token = access_token;
+            form.ShowDialog();
+        }
     }
 }

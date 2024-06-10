@@ -33,15 +33,16 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.buttonTest = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // chromiumWebBrowser1
             // 
             this.chromiumWebBrowser1.ActivateBrowserOnCreation = false;
-            this.chromiumWebBrowser1.Location = new System.Drawing.Point(12, 401);
+            this.chromiumWebBrowser1.Location = new System.Drawing.Point(12, 216);
             this.chromiumWebBrowser1.Name = "chromiumWebBrowser1";
-            this.chromiumWebBrowser1.Size = new System.Drawing.Size(266, 35);
+            this.chromiumWebBrowser1.Size = new System.Drawing.Size(266, 108);
             this.chromiumWebBrowser1.TabIndex = 4;
             this.chromiumWebBrowser1.AddressChanged += new System.EventHandler<CefSharp.AddressChangedEventArgs>(this.chromiumWebBrowser1_AddressChanged);
             // 
@@ -69,11 +70,22 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // buttonTest
+            // 
+            this.buttonTest.Location = new System.Drawing.Point(583, 50);
+            this.buttonTest.Name = "buttonTest";
+            this.buttonTest.Size = new System.Drawing.Size(165, 60);
+            this.buttonTest.TabIndex = 8;
+            this.buttonTest.Text = "button1";
+            this.buttonTest.UseVisualStyleBackColor = true;
+            this.buttonTest.Click += new System.EventHandler(this.buttonTest_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(840, 448);
+            this.Controls.Add(this.buttonTest);
             this.Controls.Add(this.chromiumWebBrowser1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -93,6 +105,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button buttonTest;
     }
 }
 
