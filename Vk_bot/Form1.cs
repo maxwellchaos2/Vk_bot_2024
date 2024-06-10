@@ -34,7 +34,7 @@ namespace Vk_bot
                                            "client_id=8104769&" +
                                            "display=page&" +
                                            "redirect_uri=https://oauth.vk.com/blank.html&" +
-                                           "scope=friends+stories+photos+wall&" +
+                                           "scope=friends,stories,photos,wall&" +
                                            "response_type=token&" +
                                            "v=5.131&" +
                                            "state=jhgugy57yh69876897");
